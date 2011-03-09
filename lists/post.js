@@ -32,6 +32,7 @@ function(head, req) {
           commentsFeed : commentsFeed
         },
         scripts : {},
+        assets : path.asset(),
         title : post.title,
         post_id : post._id,
         date : post.created_at,

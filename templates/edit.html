@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ pageTitle }}</title>
+    <title>{{ blog.title }}</title>
     <link rel="stylesheet" href="{{ assets }}/style/screen.css" type="text/css">
   </head>
   <body>
@@ -30,7 +30,7 @@
     </div>
   </body>
   {{>scripts}}
-  <script src="../../script/jquery.scrollTo.js"></script>
+  <script src="{{ assets }}/script/jquery.scrollTo.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       var path = app.require("vendor/couchapp/lib/path").init(app.req);
