@@ -1,0 +1,142 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$$	vendor/couchapp/_attachments/jquery.evently.js	/^function $$(node) {$/;"	f
+$.evently.connect	vendor/couchapp/_attachments/jquery.evently.js	/^    connect : function(source, target, events) {$/;"	m
+$.evently.paths	vendor/couchapp/_attachments/jquery.evently.js	/^    paths : [],$/;"	p
+$.fn.evently	vendor/couchapp/_attachments/jquery.evently.js	/^  $.fn.evently = function(events, app, args) {$/;"	f
+$.fn.pathbinder	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  $.fn.pathbinder = function(name, paths, options) {$/;"	f
+$.fn.replace	vendor/couchapp/_attachments/jquery.evently.js	/^  $.fn.replace = function(elem) {$/;"	f
+$.fn.serializeObject	vendor/couchapp/_attachments/jquery.couch.app.util.js	/^$.fn.serializeObject = function() {$/;"	f
+$.log	vendor/couchapp/_attachments/jquery.couch.app.util.js	/^$.log = function(m) {$/;"	f
+$.pathbinder.changeFuns	vendor/couchapp/_attachments/jquery.pathbinder.js	/^    changeFuns : [],$/;"	p
+applyCommon	vendor/couchapp/_attachments/jquery.evently.js	/^  function applyCommon(events) {$/;"	f
+Array	vendor/couchapp/_attachments/jquery.couch.app.js	/^    Array.prototype.forEach = function(fun \/*, thisp*\/)$/;"	c
+Array.forEach	vendor/couchapp/_attachments/jquery.couch.app.js	/^    Array.prototype.forEach = function(fun \/*, thisp*\/)$/;"	m
+Array.indexOf	vendor/couchapp/_attachments/jquery.couch.app.js	/^    Array.prototype.indexOf = function(elt)$/;"	m
+b64pad	vendor/couchapp/lib/md5.js	/^var b64pad  = ""; \/* base-64 pad character. "=" for strict RFC compliance   *\/$/;"	v
+b64_hmac_md5	vendor/couchapp/lib/md5.js	/^function b64_hmac_md5(key, data) { return binl2b64(core_hmac_md5(key, data)); }$/;"	f
+b64_md5	vendor/couchapp/lib/md5.js	/^function b64_md5(s){ return binl2b64(core_md5(str2binl(s), s.length * chrsz));}$/;"	f
+binl2b64	vendor/couchapp/lib/md5.js	/^function binl2b64(binarray)$/;"	f
+binl2hex	vendor/couchapp/lib/md5.js	/^function binl2hex(binarray)$/;"	f
+binl2str	vendor/couchapp/lib/md5.js	/^function binl2str(bin)$/;"	f
+bit_rol	vendor/couchapp/lib/md5.js	/^function bit_rol(num, cnt)$/;"	f
+chrsz	vendor/couchapp/lib/md5.js	/^var chrsz   = 8;  \/* bits per input character. 8 - ASCII; 16 - Unicode      *\/$/;"	v
+concatArgs	vendor/couchapp/lib/path.js	/^function concatArgs(array, args) {$/;"	f
+connectToChanges	vendor/couchapp/_attachments/jquery.evently.js	/^  function connectToChanges(app, fun, update_seq) {$/;"	f
+connectToChanges.changesReq	vendor/couchapp/_attachments/jquery.evently.js	/^    function changesReq(seq) {$/;"	f
+core_hmac_md5	vendor/couchapp/lib/md5.js	/^function core_hmac_md5(key, data)$/;"	f
+core_md5	vendor/couchapp/lib/md5.js	/^function core_md5(x, len)$/;"	f
+couchapp_load	vendor/couchapp/_attachments/loader.js	/^function couchapp_load(scripts) {$/;"	f
+docForm	vendor/couchapp/lib/docform.js	/^function docForm(formSelector, opts) {$/;"	f
+docForm	vendor/couchapp/_attachments/jquery.couch.app.js	/^  function docForm() { alert("docForm has been moved to vendor\/couchapp\/lib\/docForm.js, use app.require to load") };$/;"	f
+docForm.docToForm	vendor/couchapp/lib/docform.js	/^  function docToForm(doc) {$/;"	f
+docForm.formToDeepJSON	vendor/couchapp/lib/docform.js	/^  function formToDeepJSON(form, fields, doc) {$/;"	f
+docForm.instance.deleteDoc	vendor/couchapp/lib/docform.js	/^    deleteDoc : function(opts) {$/;"	m
+encodeOptions	vendor/couchapp/lib/path.js	/^function encodeOptions(options) {$/;"	f
+eventlyHandler	vendor/couchapp/_attachments/jquery.evently.js	/^  function eventlyHandler(elem, name, h, args) {$/;"	f
+exports.clear	vendor/couchapp/lib/cache.js	/^exports.clear = function(db, docid) {$/;"	f
+exports.ddoc	vendor/couchapp/lib/code.js	/^exports.ddoc = function(ddoc) {$/;"	f
+exports.encode	vendor/couchapp/lib/linkup.js	/^exports.encode = function(body, person_prefix, tag_prefix) {$/;"	f
+exports.entry	vendor/couchapp/lib/atom.js	/^exports.entry = function(data) {$/;"	f
+exports.get	vendor/couchapp/lib/cache.js	/^exports.get = function(db, docid, setFun, getFun) {$/;"	f
+exports.header	vendor/couchapp/lib/atom.js	/^exports.header = function(data) {$/;"	f
+exports.init	vendor/couchapp/lib/path.js	/^exports.init = function(req) {$/;"	f
+exports.makeHtml	vendor/couchapp/lib/markdown.js	/^exports.makeHtml = function(text) {$/;"	f
+exports.permanent	vendor/couchapp/lib/redirect.js	/^exports.permanent = function(redirect) {$/;"	f
+exports.prettyDate	vendor/couchapp/lib/utils.js	/^exports.prettyDate = function(time){$/;"	f
+exports.send	vendor/couchapp/lib/list.js	/^exports.send = function(chunk) {$/;"	f
+exports.withRows	vendor/couchapp/lib/list.js	/^exports.withRows = function(fun) {$/;"	f
+exports.withRows.f	vendor/couchapp/lib/list.js	/^ var f = function() {$/;"	f
+extractEvents	vendor/couchapp/_attachments/jquery.evently.js	/^  function extractEvents(name, ddoc) {$/;"	f
+extractFrom	vendor/couchapp/_attachments/jquery.evently.js	/^  function extractFrom(name, evs) {$/;"	f
+extractPartials	vendor/couchapp/_attachments/jquery.evently.js	/^  function extractPartials(ddoc) {$/;"	f
+f	vendor/couchapp/lib/atom.js	/^function f(n) {    \/\/ Format integers to have at least two digits.$/;"	f
+followChanges	vendor/couchapp/_attachments/jquery.evently.js	/^  function followChanges(app) {$/;"	f
+function.handleDDoc	vendor/couchapp/_attachments/jquery.couch.app.js	/^    function handleDDoc(ddoc) {        $/;"	f
+funViaString	vendor/couchapp/_attachments/jquery.evently.js	/^  function funViaString(fun, hint) {$/;"	f
+getPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function getPath() {$/;"	f
+goPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function goPath(newPath) {$/;"	f
+g_html_blocks	vendor/couchapp/lib/markdown.js	/^var g_html_blocks;$/;"	v
+g_list_level	vendor/couchapp/lib/markdown.js	/^var g_list_level = 0;$/;"	v
+g_titles	vendor/couchapp/lib/markdown.js	/^var g_titles;$/;"	v
+g_urls	vendor/couchapp/lib/markdown.js	/^var g_urls;$/;"	v
+hashChanged	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function hashChanged() {$/;"	f
+hexcase	vendor/couchapp/lib/md5.js	/^var hexcase = 0;  \/* hex output format. 0 - lowercase; 1 - uppercase        *\/$/;"	v
+hex_hmac_md5	vendor/couchapp/lib/md5.js	/^function hex_hmac_md5(key, data) { return binl2hex(core_hmac_md5(key, data)); }$/;"	f
+hex_md5	vendor/couchapp/lib/md5.js	/^function hex_md5(s){ return binl2hex(core_md5(str2binl(s), s.length * chrsz));}$/;"	f
+instance.localDoc	vendor/couchapp/lib/docform.js	/^    localDoc : function() {$/;"	m
+is_kinda_truthy	vendor/couchapp/lib/mustache.js	/^      function is_kinda_truthy(bool) {$/;"	f
+is_kinda_truthy	vendor/couchapp/_attachments/jquery.mustache.js	/^      function is_kinda_truthy(bool) {$/;"	f
+l	vendor/couchapp/lib/path.js	/^      var l = query.limit;$/;"	v
+lines	vendor/couchapp/lib/mustache.js	/^      var lines = template.split("\\n");$/;"	v
+lines	vendor/couchapp/_attachments/jquery.mustache.js	/^      var lines = template.split("\\n");$/;"	v
+list	vendor/couchapp/lib/path.js	/^      var list = req.path[req.path.length - 2];$/;"	v
+list	vendor/couchapp/_attachments/jquery.couch.app.js	/^    this.list = function(list, view, opts) {$/;"	f
+makePath	vendor/couchapp/lib/path.js	/^function makePath(array) {$/;"	f
+makePathSpec	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function makePathSpec(path, callback) {$/;"	f
+makeRequire	vendor/couchapp/_attachments/jquery.couch.app.js	/^  function makeRequire(ddoc) {$/;"	f
+makeRequire.getCachedModule	vendor/couchapp/_attachments/jquery.couch.app.js	/^    function getCachedModule(name, parents) {$/;"	f
+makeRequire.require	vendor/couchapp/_attachments/jquery.couch.app.js	/^    var require = function (name, parents) {$/;"	f
+makeRequire.setCachedModule	vendor/couchapp/_attachments/jquery.couch.app.js	/^    function setCachedModule(name, parents, module) {$/;"	f
+md5_cmn	vendor/couchapp/lib/md5.js	/^function md5_cmn(q, a, b, x, s, t)$/;"	f
+md5_ff	vendor/couchapp/lib/md5.js	/^function md5_ff(a, b, c, d, x, s, t)$/;"	f
+md5_gg	vendor/couchapp/lib/md5.js	/^function md5_gg(a, b, c, d, x, s, t)$/;"	f
+md5_hh	vendor/couchapp/lib/md5.js	/^function md5_hh(a, b, c, d, x, s, t)$/;"	f
+md5_ii	vendor/couchapp/lib/md5.js	/^function md5_ii(a, b, c, d, x, s, t)$/;"	f
+md5_vm_test	vendor/couchapp/lib/md5.js	/^function md5_vm_test()$/;"	f
+mockReq	vendor/couchapp/_attachments/jquery.couch.app.js	/^  function mockReq() {$/;"	f
+mustache	vendor/couchapp/lib/linkup.js	/^var mustache = require("vendor\/couchapp\/lib\/mustache");$/;"	v
+Mustache	vendor/couchapp/lib/mustache.js	/^var Mustache = function() {$/;"	f
+Mustache.Renderer	vendor/couchapp/lib/mustache.js	/^  var Renderer = function() {};$/;"	f
+mustachioed	vendor/couchapp/_attachments/jquery.evently.js	/^  function mustachioed(me, h, args) {$/;"	f
+newRows	vendor/couchapp/_attachments/jquery.evently.js	/^  function newRows(elem, app, view, opts) {$/;"	f
+newRows.successFun	vendor/couchapp/_attachments/jquery.evently.js	/^    function successFun(resp) {$/;"	f
+new_regex	vendor/couchapp/lib/mustache.js	/^      var new_regex = function() {$/;"	f
+new_regex	vendor/couchapp/_attachments/jquery.mustache.js	/^      var new_regex = function() {$/;"	f
+pollPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function pollPath(every) {$/;"	f
+pollPath.hashCheck	vendor/couchapp/_attachments/jquery.pathbinder.js	/^    function hashCheck() {        $/;"	f
+q.success	vendor/couchapp/_attachments/jquery.evently.js	/^      q.success = function(resp) {$/;"	f
+query	vendor/couchapp/lib/path.js	/^      var query = req.query;$/;"	v
+registerPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function registerPath(pathSpec) {$/;"	f
+renderElement	vendor/couchapp/_attachments/jquery.evently.js	/^  function renderElement(me, h, args, qrun, arun) {$/;"	f
+Renderer	vendor/couchapp/lib/mustache.js	/^  Renderer.prototype = {$/;"	c
+Renderer	vendor/couchapp/_attachments/jquery.mustache.js	/^  Renderer.prototype = {$/;"	c
+Renderer	vendor/couchapp/_attachments/jquery.mustache.js	/^  var Renderer = function() {};$/;"	f
+Renderer.ctag	vendor/couchapp/lib/mustache.js	/^    ctag: "}}",$/;"	p
+Renderer.ctag	vendor/couchapp/_attachments/jquery.mustache.js	/^    ctag: "}}",$/;"	p
+Renderer.otag	vendor/couchapp/lib/mustache.js	/^    otag: "{{",$/;"	p
+Renderer.otag	vendor/couchapp/_attachments/jquery.mustache.js	/^    otag: "{{",$/;"	p
+Renderer.pragmas	vendor/couchapp/lib/mustache.js	/^    pragmas: {},$/;"	p
+Renderer.pragmas	vendor/couchapp/_attachments/jquery.mustache.js	/^    pragmas: {},$/;"	p
+resolveModule	vendor/couchapp/_attachments/jquery.couch.app.js	/^  function resolveModule(path, names, parents, current) {$/;"	f
+rfc3339	vendor/couchapp/lib/atom.js	/^function rfc3339(date) {$/;"	f
+runAsync	vendor/couchapp/_attachments/jquery.evently.js	/^  function runAsync(me, h, args) {  $/;"	f
+runIfFun	vendor/couchapp/_attachments/jquery.evently.js	/^  function runIfFun(me, fun, args) {$/;"	f
+runQuery	vendor/couchapp/_attachments/jquery.evently.js	/^  function runQuery(me, h, args) {$/;"	f
+safe_add	vendor/couchapp/lib/md5.js	/^function safe_add(x, y)$/;"	f
+setPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function setPath(pathSpec, params) {$/;"	f
+str2binl	vendor/couchapp/lib/md5.js	/^function str2binl(str)$/;"	f
+str_hmac_md5	vendor/couchapp/lib/md5.js	/^function str_hmac_md5(key, data) { return binl2str(core_hmac_md5(key, data)); }$/;"	f
+str_md5	vendor/couchapp/lib/md5.js	/^function str_md5(s){ return binl2str(core_md5(str2binl(s), s.length * chrsz));}$/;"	f
+tag_replace_callback	vendor/couchapp/lib/mustache.js	/^      var tag_replace_callback = function(match, operator, name) {$/;"	f
+tag_replace_callback	vendor/couchapp/_attachments/jquery.mustache.js	/^      var tag_replace_callback = function(match, operator, name) {$/;"	f
+triggerOnPath	vendor/couchapp/_attachments/jquery.pathbinder.js	/^  function triggerOnPath(path) {$/;"	f
+v.assert	vendor/couchapp/lib/validate.js	/^  v.assert = function(should, message) {$/;"	f
+v.dateFormat	vendor/couchapp/lib/validate.js	/^  v.dateFormat = function(field) {$/;"	f
+v.forbidden	vendor/couchapp/lib/validate.js	/^  v.forbidden = function(message) {    $/;"	f
+v.isAuthor	validate_doc_update.js	/^    v.isAuthor = function() {$/;"	f
+v.isRole	vendor/couchapp/lib/validate.js	/^  v.isRole = function(role) {$/;"	f
+v.matches	vendor/couchapp/lib/validate.js	/^  v.matches = function(field, regex, message) {$/;"	f
+v.require	vendor/couchapp/lib/validate.js	/^  v.require = function() {$/;"	f
+v.unauthorized	vendor/couchapp/lib/validate.js	/^  v.unauthorized = function(message) {$/;"	f
+v.unchanged	vendor/couchapp/lib/validate.js	/^  v.unchanged = function(field) {$/;"	f
+value	vendor/couchapp/lib/mustache.js	/^      var value;$/;"	v
+value	vendor/couchapp/_attachments/jquery.mustache.js	/^      var value;$/;"	v
+var.data.header	shows/edit.js	/^        header: {$/;"	p
+var.newProfile.rand	vendor/couchapp/evently/profile/noProfile/selectors/form/submit.js	/^    rand : Math.random().toString(), $/;"	p
+view	vendor/couchapp/lib/path.js	/^      var view = req.path[req.path.length - 1];$/;"	v
+view	vendor/couchapp/_attachments/jquery.couch.app.js	/^    this.view = function(view, opts) {$/;"	f

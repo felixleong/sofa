@@ -94,7 +94,7 @@ exports.makeHtml = function(text) {
 	// attacklab: Replace ~ with ~T
 	// This lets us use tilde as an escape char to avoid md5 hashes
 	// The choice of character is arbitray; anything that isn't
-    // magic in Markdown will work.
+  // magic in Markdown will work.
 	text = text.replace(/~/g,"~T");
 
 	// attacklab: Replace $ with ~D
@@ -202,9 +202,9 @@ var _HashHTMLBlocks = function(text) {
 
 	// First, look for nested blocks, e.g.:
 	//   <div>
-	//     <div>
-	//     tags for inner block must be indented.
-	//     </div>
+	//   <div>
+	//   tags for inner block must be indented.
+	//   </div>
 	//   </div>
 	//
 	// The outermost tags must start at the left margin for this to match, and
@@ -769,9 +769,9 @@ _ProcessListItems = function(list_str) {
 	// We do this because when we're not inside a list, we want to treat
 	// something like this:
 	//
-	//    I recommend upgrading to version
-	//    8. Oops, now this line is treated
-	//    as a sub-list.
+	//  I recommend upgrading to version
+	//  8. Oops, now this line is treated
+	//  as a sub-list.
 	//
 	// As a single paragraph, despite the fact that the second line starts
 	// with a digit-period-space sequence.
@@ -954,7 +954,7 @@ var _EncodeCode = function(text) {
 
 //   1. Subitem
 
-//            special char: *
+//      special char: *
 //---
 
 	return text;
@@ -1025,7 +1025,7 @@ var _DoBlockQuotes = function(text) {
 var _FormParagraphs = function(text) {
 //
 //  Params:
-//    $text - string to process with html <p> tags
+//  $text - string to process with html <p> tags
 //
 
 	// Strip leading and trailing lines:
@@ -1227,7 +1227,7 @@ var _Detab = function(text) {
 // In javascript we're less fortunate.
 
 	// expand first n-1 tabs
-	text = text.replace(/\t(?=\t)/g,"    "); // attacklab: g_tab_width
+	text = text.replace(/\t(?=\t)/g,"  "); // attacklab: g_tab_width
 
 	// replace the nth with two sentinels
 	text = text.replace(/\t/g,"~A~B");
@@ -1246,7 +1246,7 @@ var _Detab = function(text) {
 	);
 
 	// clean up sentinels
-	text = text.replace(/~A/g,"    ");  // attacklab: g_tab_width
+	text = text.replace(/~A/g,"  ");  // attacklab: g_tab_width
 	text = text.replace(/~B/g,"");
 
 	return text;
@@ -1284,17 +1284,17 @@ exports.encode = exports.markdown = function (src) {
 };
 
 exports.main = function (system) {
-    var command = system.args.shift();
-    if (!system.args.length) {
-        system.stdout.write(exports.markdown(system.stdin.read())).flush();
-    } else {
-        var arg;
-        while (arg = system.args.shift()) {
-            var out = system.fs.basename(arg, '.md') + '.html';
-            print(out);
-            system.fs.write(out, exports.markdown(system.fs.read(arg)));
-        }
+  var command = system.args.shift();
+  if (!system.args.length) {
+    system.stdout.write(exports.markdown(system.stdin.read())).flush();
+  } else {
+    var arg;
+    while (arg = system.args.shift()) {
+      var out = system.fs.basename(arg, '.md') + '.html';
+      print(out);
+      system.fs.write(out, exports.markdown(system.fs.read(arg)));
     }
+  }
 };
 
 

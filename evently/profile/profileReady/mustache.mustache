@@ -1,0 +1,18 @@
+<form id="new-comment" action="post.html" method="post">
+<div class="avatar">
+  {{#gravatar_url}}<img src="{{gravatar_url}}"/>{{/gravatar_url}}
+</div>
+
+<h3>Comment on this post, {{nickname}}:</h3>
+<p>
+<label>Comment <em>(with <a href="http://warpedvisions.org/projects/markdown-cheat-sheet/">Markdown</a>)</em></label>
+<textarea name="comment" rows="8" cols="40"></textarea>
+</p>
+
+<p>
+  <input type="button" id="preview" name="preview" value="Preview" />
+  <input type="submit" name="submit" value="Submit &rarr;" />
+</p>
+
+<ul id="comment-preview"></ul>
+</form>

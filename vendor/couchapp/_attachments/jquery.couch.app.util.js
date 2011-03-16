@@ -1,34 +1,34 @@
 $.log = function(m) {
   if (window && window.console && window.console.log) {
-    window.console.log(arguments.length == 1 ? m : arguments);
+  window.console.log(arguments.length == 1 ? m : arguments);
   }
 };
 
 // http://stackoverflow.com/questions/1184624/serialize-form-to-json-with-jquery/1186309#1186309
 $.fn.serializeObject = function() {
-    var o = {};
-    var a = this.serializeArray();
-    $.each(a, function() {
-        if (o[this.name]) {
-            if (!o[this.name].push) {
-                o[this.name] = [o[this.name]];
-            }
-            o[this.name].push(this.value || '');
-        } else {
-            o[this.name] = this.value || '';
-        }
-    });
-    return o;
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+    } else {
+      o[this.name] = this.value || '';
+    }
+  });
+  return o;
 };
 
 // todo remove this crap
-function escapeHTML(st) {                                       
-  return(                                                                 
-    st && st.replace(/&/g,'&amp;').                                         
-      replace(/>/g,'&gt;').                                           
-      replace(/</g,'&lt;').                                           
-      replace(/"/g,'&quot;')                                         
-  );                                                                     
+function escapeHTML(st) {                     
+  return(                                 
+  st && st.replace(/&/g,'&amp;').                     
+    replace(/>/g,'&gt;').                       
+    replace(/</g,'&lt;').                       
+    replace(/"/g,'&quot;')                     
+  );                                   
 };
 
 function safeHTML(st, len) {
@@ -38,23 +38,23 @@ function safeHTML(st, len) {
 // todo this should take a replacement template
 $.linkify = function(body) {
   return body.replace(/((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi,function(a) {
-    return '<a target="_blank" href="'+a+'">'+a+'</a>';
+  return '<a target="_blank" href="'+a+'">'+a+'</a>';
   }).replace(/\@([\w\-]+)/g,function(user,name) {
-    return '<a href="#/mentions/'+encodeURIComponent(name.toLowerCase())+'">'+user+'</a>';
+  return '<a href="#/mentions/'+encodeURIComponent(name.toLowerCase())+'">'+user+'</a>';
   }).replace(/\#([\w\-\.]+)/g,function(word,tag) {
-    return '<a href="#/tags/'+encodeURIComponent(tag.toLowerCase())+'">'+word+'</a>';
+  return '<a href="#/tags/'+encodeURIComponent(tag.toLowerCase())+'">'+word+'</a>';
   });
 };
 
 $.fn.prettyDate = function() {
   $(this).each(function() {
-    var string, title = $(this).attr("title");
-    if (title) {
-      string = $.prettyDate(title);
-    } else {
-      string = $.prettyDate($(this).text());
-    }
-    $(this).text(string);
+  var string, title = $(this).attr("title");
+  if (title) {
+    string = $.prettyDate(title);
+  } else {
+    string = $.prettyDate($(this).text());
+  }
+  $(this).text(string);
   });
 };
 
@@ -75,16 +75,16 @@ $.prettyDate = function(time){
 		day_diff == 1 && "yesterday" ||
 		day_diff < 21 && day_diff + " days ago" ||
 		day_diff < 45 && Math.ceil( day_diff / 7 ) + " weeks ago" ||
-    time;
-    // day_diff < 730 && Math.ceil( day_diff / 31 ) + " months ago" ||
-    // Math.ceil( day_diff / 365 ) + " years ago";
+  time;
+  // day_diff < 730 && Math.ceil( day_diff / 31 ) + " months ago" ||
+  // Math.ceil( day_diff / 365 ) + " years ago";
 };
 
 $.argsToArray = function(args) {
   if (!args.callee) return args;
   var array = [];
   for (var i=0; i < args.length; i++) {
-    array.push(args[i]);
+  array.push(args[i]);
   };
   return array;
 }

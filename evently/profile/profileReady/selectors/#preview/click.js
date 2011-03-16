@@ -1,15 +1,25 @@
-function() {
-  var f = $(this), app = $$(this).app;
-  var Mustache = app.require("lib/mustache");
-  var markdown = app.require("vendor/couchapp/lib/markdown");
+function(evt) {
+  evt.preventDefault();
 
+  var form = $('#new-comment');
+  var app = $$(this).app;
+  console.log('Preview clicked', this, app);
+  var Mustache = app.require('vendor/couchapp/lib/mustache');
+  console.log('mustache');
+  var markdown = app.require('vendor/couchapp/lib/markdown');
+  console.log('markdown');
+
+  // Load up the context variables
+  var profile = $$('#profile').profile;
   var c = {
-    name : $$("#profile").profile.nickname,
-    url : $$("#profile").profile.url,
-    avatar : $$("#profile").profile.gravatar_url,
-    html : markdown.encode(Mustache.escape($("[name=comment]", f).val())),
-    created_at : JSON.parse(JSON.stringify(new Date()))
+    name: profile.nickname,
+    url: profile.url,
+    avatar: profile.gravatar_url,
+    html: markdown.encode(Mustache.escape($('[name=comment]', form).val())),
+    created_at: JSON.parse(JSON.stringify(new Date()))
   };
-  
-  $("#comment-preview").html(Mustache.to_html(app.ddoc.templates.partials.comment, c));
-};
+
+  // Render the template
+  $('#comment-preview').html(Mustache.to_html(app.ddoc.templates.partials.comment, c));
+  console.log('Preview ended');
+}

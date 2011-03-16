@@ -129,6 +129,7 @@ p.post {
 }
 
 #comments ul {
+  list-style:none;
   padding:0;
 }
 

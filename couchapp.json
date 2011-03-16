@@ -1,3 +1,4 @@
 {
-  "index" : "_list/index/recent-posts?descending=true&limit=10"
+  "name": "CouchApp Sandbox",
+  "description": "My personal sandbox"
 }

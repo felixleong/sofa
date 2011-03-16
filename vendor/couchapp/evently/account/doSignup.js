@@ -1,10 +1,10 @@
 function(e, name, pass) {
   var elem = $(this);
   $.couch.signup({
-    name : name
+  name : name
   }, pass, {
-    success : function() {
-      elem.trigger("doLogin", [name, pass]);
-    }
+  success : function() {
+    elem.trigger("doLogin", [name, pass]);
+  }
   });
 }

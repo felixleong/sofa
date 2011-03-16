@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{blogName}}</title>
+    <link href="{{assets}}/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="{{feedPath}}" rel="alternative" type="application/atom+xml" title="{{blogName}} Atom feed"/>
+  </head>
+  <body>
+    {{>header}}
+    <div id="tagcloud"></div>
+    <div id="content">
+      <h1>Recently…</h1>
+      <ul id="posts">
+      {{#posts}}
+      <li>
+        <h3><a href="{{link}}">{{title}}</a></h3>
+        {{#has_tags}}
+        <div class="tags">
+          {{#tags}}<a href="{{link}}">{{tag}}</a>{{/tags}}
+        </div>
+        {{/has_tags}}
+        <div class="by">
+          <span class="date">{{date}}</span> by {{author}}
+        </div>
+      </li>
+      {{/posts}}
+      </ul>
+      <div class="paginate">
+        {{! TODO This pagination system is RETARDED - mixes up the concept of Older\Newer pagination and the configuration of how many posts per page}}
+        <a href="{{older}}">older posts</a>
+        <a href="{{5}}">5</a>
+        <a href="{{10}}">10</a>
+        <a href="{{25}}">25</a>
+      </div>
+    </div>
+    {{>footer}}
+    <script type="text/javascript" charset="utf-8">
+    $.couch.app(
+      function() {
+        $('#tagcloud').evently(this.ddoc.evently.tagcloud, this);
+      },
+      {
+        db: '{{db}}',
+        design: '{{design}}'
+      }
+    );
+    </script>
+  </body>
+</html>
