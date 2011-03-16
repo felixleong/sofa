@@ -10,8 +10,6 @@ function(head, req) {
   var feedPath = path.list('index', 'recent-posts', {descending: true, limit: 10, format: 'atom'});
   var commentsFeed = path.list('comments', 'comments', {descending: true, limit: 10, format: 'atom'});
 
-  var path_parts = req.path;
-
   // Provide the HTML format (preferred)
   provides('html', function() {
     var key = '';

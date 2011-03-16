@@ -14,7 +14,7 @@ function(head, req) {
     // Get the first row and make sure it's a post
     var post = getRow().value;
     if (post.type != 'post') {
-      throw(['error', 'not_found', 'not a post']);
+      throw(['error', 'not_found', 'not a post']); // Here's how you'd do a 404
     }
 
     // Determine the format and generate the HTML if necessary
